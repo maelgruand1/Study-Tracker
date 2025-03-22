@@ -116,6 +116,7 @@ button:hover {
 .dark-mode #session-history li {
     background: #666;
 }
+
 /* Style du bouton Supprimer Historique */
 #deleteStorage {
     background-color: #ff4c4c;
@@ -132,4 +133,60 @@ button:hover {
 
 #deleteStorage:hover {
     background-color: #d63434;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .settings input {
+        font-size: 0.9rem;
+    }
+
+    #time-display {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .settings input {
+        font-size: 0.85rem;
+    }
+
+    #time-display {
+        font-size: 1.8rem;
+    }
+
+    #deleteStorage {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
 }
